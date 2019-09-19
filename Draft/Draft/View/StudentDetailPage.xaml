@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="Draft.View.StudentDetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Draft.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Background="crimson" >
+            <Image 
+                Source="/Picture/tafesa_logo.jpg"
+                MaxHeight="80"
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Left"
+                Margin="50,0,0,0"/>
+
+            <TextBlock Style="{StaticResource HeaderTextBlockStyle}">
+
+            </TextBlock>
+
+
+        </StackPanel>
+        <StackPanel x:Name="MenuPanel" Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+
+            <AppBarButton 
+                x:Name="loginheadbtn"
+                Icon="Admin"
+                Label="Login"
+                FontWeight="Bold"
+                Foreground="White"/>
+
+            <AppBarButton 
+                x:Name="moodleheadbtn"
+                Icon="Home"
+                Label="Moodle"
+                FontWeight="Bold"
+                Foreground="White"/>
+
+            <AppBarButton 
+                x:Name="logoutheadbtn"
+                Icon="Cancel"
+                Label="logout"
+                FontWeight="Bold"
+                Foreground="White"/>
+        </StackPanel>
+        
+        <StackPanel x:Name="FooterPanel" Grid.Row="2" Background="Crimson">
+
+        </StackPanel>
+
+    </Grid>
+</Page>
